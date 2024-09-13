@@ -1,4 +1,6 @@
 import App.Auth;
+import App.UserInput;
+import App.UserInterface;
 import Modules.Colored;
 
 public class Main {
@@ -6,14 +8,8 @@ public class Main {
         Colored colored = new Colored();
         System.out.println(colored.colorize("GREEN", "Your program successfully started!"));
 
-        Auth auth = new Auth();
+        UserInterface userInterface = new UserInterface();
 
-        auth.register("eric_antonyan", "antonyaneric@gmail.com", "password", "password", "Eric", "Antonyan", true);
-
-        auth.account();
-
-        auth.logout();
-
-        auth.account();
+        userInterface.question();
     }
 }

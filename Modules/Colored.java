@@ -1,6 +1,8 @@
 package Modules;
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ArrayList;
 
 public class Colored {
     private static final String RESET = "\033[0m";
@@ -14,6 +16,9 @@ public class Colored {
 
     private static final Map<String, String> colorMap = new HashMap<>();
 
+    @SuppressWarnings("rawtypes")
+    public ArrayList<String> colors = new ArrayList();
+
     static {
         colorMap.put("RED", RED);
         colorMap.put("GREEN", GREEN);
@@ -23,7 +28,21 @@ public class Colored {
         colorMap.put("CYAN", CYAN);
         colorMap.put("WHITE", WHITE);
     }
-    
+
+    public ArrayList<String> getColors() {
+        colors.add("RED");
+        colors.add("GREEN");
+        colors.add("YELLOW");
+        colors.add("BLUE");
+        colors.add("MAGENTA");
+        colors.add("CYAN");
+        colors.add("GREEN");
+        colors.add("GREEN");
+        colors.add("WHITE");
+
+        return colors;
+    }
+
     public String colorize(String color, String content) {
         String colorCode = colorMap.getOrDefault(color.toUpperCase(), RESET);
         return colorCode + content + RESET;
