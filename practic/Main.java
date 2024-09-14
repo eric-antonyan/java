@@ -1,15 +1,14 @@
 import App.Auth;
-import App.UserInput;
-import App.UserInterface;
-import Modules.Colored;
 
 public class Main {
     public static void main(String[] args) {
-        Colored colored = new Colored();
-        System.out.println(colored.colorize("GREEN", "Your program successfully started!"));
+        Auth auth = new Auth();
 
-        UserInterface userInterface = new UserInterface();
+        auth.register("eric_antonyan", "antonyaneric@gmail.com", "Erik2008", "Erik2008", "Eric", "Antonyan", true);
+        // auth.register("eric_antonyan", "antonyaneric@gmail.com", "Erik2008", "Erik2008", "Eric", "Antonyan", true);
 
-        userInterface.question();
+
+
+        auth.getUsersCount();
     }
 }

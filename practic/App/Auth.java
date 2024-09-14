@@ -1,11 +1,11 @@
 package App;
-import java.util.ArrayList;
-import java.util.Optional;
-import java.util.Random;
 
 import Interfaces.User;
 import Modules.Colored;
 import Modules.Validation;
+import java.util.ArrayList;
+import java.util.Optional;
+import java.util.Random;
 
 public class Auth {
     ArrayList<User> users = new ArrayList<>();
