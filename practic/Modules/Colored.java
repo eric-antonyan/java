@@ -16,8 +16,7 @@ public class Colored {
 
     private static final Map<String, String> colorMap = new HashMap<>();
 
-    @SuppressWarnings("rawtypes")
-    public ArrayList<String> colors = new ArrayList();
+    public ArrayList<String> colors = new ArrayList<>();
 
     static {
         colorMap.put("RED", RED);

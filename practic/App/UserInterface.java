@@ -2,11 +2,8 @@ package App;
 
 import javax.swing.JOptionPane;
 
-import Modules.Colored;
 import Modules.Pyramid;
 
-import java.util.Random;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 //      *     
